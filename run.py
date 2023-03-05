@@ -32,7 +32,7 @@ pairs = zip(model_image, cloth_image)
 
 with open('/content/inputs/test_pairs.txt', 'w') as file:
     for model, cloth in pairs:
-        file.write(f"{model} {cloth}")
+        file.write(f"{model} {cloth}\n")
 
 # making predictions
 os.system(
